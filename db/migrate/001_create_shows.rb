@@ -1,10 +1,10 @@
 class CreateMShows < ActiveRecord::Migration[5.2]
   def change
     create_table :shows do |t|
-      t.string :title
-      t.string :release_date
-      t.string :director
-      t.string :lead
+      t.string :name
+      t.string :network
+      t.string :day
+      t.integer :ratings 
     end
   end
 end
